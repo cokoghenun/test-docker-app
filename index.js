@@ -3,7 +3,7 @@ const server = require('express')();
 const PORT = process.env.PORT;
 
 server.get('/', (req, res) => {
-  const text = `Welcome to Test App \n  Your env secret is ${process.env.SECRET}`;
+  const text = `Welcome to Test App. Your env secret is ${process.env.SECRET}`;
   res.send(text);
 });
 
